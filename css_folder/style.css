@@ -81,3 +81,11 @@ button {
 button:hover {
     background-color: rgba(0, 136, 169, 0.6);
 }
+
+.cta {
+    background-color: rgba(0, 136, 169, 1);
+}
+
+.cta:hover {
+    background-color: rgba(0, 136, 169, 0.6);
+}
