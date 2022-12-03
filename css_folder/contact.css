@@ -2,68 +2,65 @@
     font-family: quicksand; src: url('Quicksand.ttf');
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: "Quicksand", sans-serif;
     margin: 0;
+    padding: 0;
+    background: #262626;
 }
 
-.section {
-    height: 100vh;
-}
-
-#birth {
-    background: #aff8db;
-}
-
-#school {
-    background: #ffabab;
-}
-
-#habit {
-    background: #fff5ba;
-}
-
-.nav {
-    --nav-gap: 15px;
-    padding: var(--nav-gap);
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.nav-item {
-    align-items: center;
+ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: var(--nav-gap);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.nav-link:hover ~ .nav-label {
-    opacity: 1;
+ul li {
+    list-style: none;
+    margin: 0 20px;
 }
 
-.nav-label {
-    color: #000000;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.1s;
-}
-
-.nav-link {
-    background: rgba(0, 0, 0, 0.3);
+ul li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
     border-radius: 50%;
-    height: var(--nav-gap);
-    margin-left: var(--nav-gap);
-    transition: transform 0.1s;
-    width: var(--nav-gap);
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
 }
 
-.nav-link-selected {
-    background: #000000;
-    transform: scale(1.4);
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffee11;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee11;
+}
+
+ul li a:hover {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #ffee11;
+    box-shadow: 0 0 5px #ffee11;
+    text-shadow: 0 0 5px #ffee11;
 }
