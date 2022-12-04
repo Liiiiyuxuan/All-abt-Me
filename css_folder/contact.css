@@ -56,7 +56,7 @@ ul li a:hover::before {
     box-shadow: 0 0 15px #ffee11;
 }
 
-ul li a:hover {
+ul li a:hover:nth-child(1) {
     width: 100px;
     height: 100px;
     line-height: 100px;
@@ -64,3 +64,11 @@ ul li a:hover {
     box-shadow: 0 0 5px #ffee11;
     text-shadow: 0 0 5px #ffee11;
 }
+ul li a:hover:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #ffee11;
+    box-shadow: 0 0 5px #ffee11;
+    text-shadow: 0 0 5px #ffee11;
+} 
