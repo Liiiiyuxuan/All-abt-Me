@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="icon" href="images/Icons/thumb.jpg" />
+    <script src="main.js" defer></script>
+    <script src="email.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h3>Hello there</h3>
+        <nav>
+          <ul>
+            <li><a href="#"> Homepage </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
+            <li><a href="#contact"> Contact Me </a></li>
+          </ul>
+        </nav>
+
+        <button onclick="showMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Landing -->
+    <section class="landing">
+      <div class="container">
+        <div>
+          <h2>Eason Li</h2>
+          <h3>University Student</h3>
+          <p>
+            Hi There! I'm An Obsessed Learner Of Technologies <br />
+            And I'm Looking Forawrd To Learning New Stuffs Everyday.
+          </p>
+          <div class="anchors">
+            <button onclick="myFunction()"> 
+              <span class="tooltiptext" id="myTooltip"> My Email </span>
+                Copy text
+              </button>
+            <a href="resume/resume.pdf"> My Resume </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+      <!-- About Me -->
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <aside>
+          <img src="images/person.jpg" alt="image" />
+          <div>
+            <h4>Who Am I?</h4>
+            <p>I'm Eason Li, a student at the University of Waterloo</p>
+            <p>
+              As a dedicated student at the University of Waterloo, I have demonstrated a strong commitment to academic excellence and 
+              personal growth. Pursuing a Computer Science degree, I have embraced challenging coursework and actively engaged in various 
+              activities to enhance my skills and broaden my perspective. My time at the university has equipped me with a solid 
+              foundation in CS, helped me become prepared for internships.
+            </p>
+
+            <ul>
+              <li id="github">
+                <a href="https://github.com/Liiiiyuxuan" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li id="linkedin">
+                <a href="https://www.linkedin.com/in/eason-li-539994276/"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li id="email">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+              </li>
+              <li id="weixin">
+                <a href="" target="_blank"><i class="fa-brands fa-weixin"></i></a>
+              </li>
+            </ul>
+            <a href="resume/resume.pdf" id="download"> My Resume </a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+
+        <!-- Gallery -->
+        <div class="projects-container">
+          <article class="landing-category">
+            <img src="images/chessboard.png" alt="Gallery Model" />
+            <a target="_blank" href="projects/Chess Game New Version/index.html">
+              <span> Chess Game </span>
+            </a>
+          </article>
+
+          <article class="api-category">
+            <img src="images/maze.png" alt="Gallery Model3" />
+            <a target="_blank" href="projects/Maze Generator/index.html">
+              <span> Maze Generator </span>
+            </a>
+          </article>
+
+          <article class="api-category">
+            <img src="images/tictactoe.png" alt="Gallery Model" />
+            <a target="_blank" href="projects/Tic Tac Toe/index.html">
+              <span> Tic Tac Toe </span>
+            </a>
+          </article>
+
+          <article class="api-category">
+            <img src="images/colliding circles.png" alt="Gallery Model" />
+            <a target="_blank" href="projects/Colliding Circles Demo/index.html">
+              <span> Colliding Circles </span>
+            </a>
+          </article>
+
+          <article class="api-category">
+            
+          </article>
+
+          <article class="api-category">
+            
+          </article>
+
+      <!-- Contact Me -->
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea rows="6" placeholder="Message"></textarea>
+
+          <input type="button" value="Send" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="icon" href="images/Icons/thumb.jpg" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h3>LOGO</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+
+        <button onclick="showMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Landing -->
+    <section class="landing">
+      <div class="container">
+        <div>
+          <h2>Eason Li</h2>
+          <h3>Front End Development Student</h3>
+          <p>
+            Hi There! I'm An Obsessed Learner Of Technologies <br />
+            And Looking To Learn New Stuffs Everyday.
+          </p>
+          <div class="anchors">
+            <a href="#portfolio">Show Case</a>
+            <a href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+      <!-- About Me -->
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <aside>
+          <img src="images/person.jpg" alt="image" />
+          <div>
+            <h4>Who Am I?</h4>
+            <p>I'm Othmane Nissoukin, a Front End Web Student</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis debitis ipsam sapiente hic
+              provident voluptates dicta laboriosam vitae voluptatem consequatur necessitatibus atque, quae iusto sint
+              nemo magnam eum aliquid.
+            </p>
+            <ul>
+              <li><span>Name:</span> Othmane Nissoukin</li>
+              <li><span>Date Of Birth:</span> 20-04-2000</li>
+              <li><span>Email:</span> othmane2000@gmail.com</li>
+              <li><span>Country:</span> Morocco</li>
+            </ul>
+            <ul>
+              <li id="github">
+                <a href="https://github.com/OthmaneNissoukin" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li id="linkedin">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li id="twitter">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li id="codepen">
+                <a href="https://codepen.io/othmane-niss" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+              </li>
+            </ul>
+            <a href="#" id="download">Download CV</a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+
+        <!-- Gallery -->
+        <div class="projects-container">
+          <article class="landing-category">
+            <img src="images/chessboard.png" alt="Gallery Model" />
+            <a target="_blank" href="projects/Chess Game New Version/index.html">
+              <span>View Demo</span>
+            </a>
+          </article>
+
+          <article class="api-category">
+            <img src="images/maze.png" alt="Gallery Model3" />
+            <a target="_blank" href="https://othmanenissoukin.github.io/github-search-tool/">
+              <span>View Demo</span>
+            </a>
+          </article>
+          <article class="api-category">
+            <img src="images/model2.jpg" alt="Gallery Model" />
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+
+          <article class="webapp-category">
+            <img src="images/model4.png" alt="Gallery Model" />
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+          <article class="landing-category">
+            <img src="images/note-keeps.png" alt="Gallery Model" />
+            <a target="_blank" href="https://othmanenissoukin.github.io/notes-keeper/">
+              <span>View Demo</span>
+            </a>
+          </article>
+          <article class="api-category">
+            <img src="images/model3.jpg" alt="Gallery Model3" />
+            <a href="#">
+              <span>View Demo</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <input type="text" placeholder="Subject" />
+          <textarea rows="6" placeholder="Message"></textarea>
+
+          <input type="button" value="Send" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
